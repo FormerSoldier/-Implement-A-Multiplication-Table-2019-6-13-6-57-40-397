@@ -22,3 +22,9 @@ function createMultiplyTable(startSmallerEqualEnd, inRange, start, end){
     }
     return result.join('\n');
 }
+
+module.exports = {
+    isStartSmallerEqualEnd,
+    isInRange,
+    createMultiplyTable
+};
