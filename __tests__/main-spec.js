@@ -13,3 +13,13 @@ it('should return false when call isInRange given -1,10', () => {
 it('should return true when call isInRange given 10,20', () => {
     expect(obj.isInRange(10,20)).toBe(true);
 });
+
+it('should return null when call createMultiplyTable given false, true, 10,1',() =>{
+    expect(obj.createMultiplyTable(false,true,10,1)).toBe(null);
+});
+it('should return "Out Of Range" when call createMultiplyTable given true, false, -1,10',() =>{
+    expect(obj.createMultiplyTable(true,false,-1,10)).toBe("Out Of Range");
+});
+it('should return "2*2=4" when call createMultiplyTable given true, true, 2,2',() =>{
+    expect(obj.createMultiplyTable(true,true,2,2)).toBe("2*2=4");
+});
