@@ -26,7 +26,7 @@ function createMultiplyTable(startSmallerEqualEnd, inRange, start, end){
 function createMultiplyTableByRange(start, end){
     let startSmallerEqualEnd = isStartSmallerEqualEnd(start, end);
     let inRange = isInRange(start, end);
-    createMultiplyTable(startSmallerEqualEnd, inRange, start, end);
+    return createMultiplyTable(startSmallerEqualEnd, inRange, start, end);
 }
 
 module.exports = {

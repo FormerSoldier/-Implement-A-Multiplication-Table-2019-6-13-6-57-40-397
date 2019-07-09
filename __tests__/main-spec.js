@@ -23,3 +23,7 @@ it('should return "Out Of Range" when call createMultiplyTable given true, false
 it('should return "2*2=4" when call createMultiplyTable given true, true, 2,2',() =>{
     expect(obj.createMultiplyTable(true,true,2,2)).toBe("2*2=4");
 });
+
+it('should return "1*1=1\n2*1=2 2*2=4" when call createMultiplyTableByRange given 1,2',() =>{
+    expect(obj.createMultiplyTableByRange(1,2)).toBe("1*1=1\n2*1=2 2*2=4");
+});
